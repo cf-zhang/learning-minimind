@@ -9,34 +9,34 @@
 | 顺序 | 文档 | 状态 | 主题 |
 | --- | --- | --- | --- |
 | 0 | [学习启动记录](kickoff-2026-08-11.md) | 已归档，不计 Day | 背景、目标、三个仓库的关系、长期路线 |
-| 1 | [Day 001](day-001-2026-08-11.md) | 已完成 | 运行模型、Tokenizer、token、Embedding、上下文化现象 |
-| 2 | [Day 002](day-002-2026-08-12.md) | 已完成 | 最小 PyTorch 模型、Linear、矩阵乘法与点积 |
-| 3 | [Day 003](day-003-2026-08-13.md) | 已完成 | prediction、target、loss 与梯度来源 |
-| 4 | [Day 004](day-004-2026-08-14.md) | 已完成 | `grad_fn`、`backward()` 与手工参数更新 |
+| 1 | [Day 001](day-001.md) | 已完成 | 运行模型、Tokenizer、token、Embedding、上下文化现象 |
+| 2 | [Day 002](day-002.md) | 已完成 | 最小 PyTorch 模型、Linear、矩阵乘法与点积 |
+| 3 | [Day 003](day-003.md) | 已完成 | prediction、target、loss 与梯度来源 |
+| 4 | [Day 004](day-004.md) | 已完成 | `grad_fn`、`backward()` 与手工参数更新 |
 | - | [阶段整理](progress-note-2026-08-17.md) | 已归档，不计 Day | Backward 跨日恢复点，不包含新学习 |
-| 5 | [Day 005](day-005-2026-08-20.md) | 已完成 | 梯度累加、清零、SGD 与最小训练循环 |
-| 6 | [Day 006](day-006-2026-08-20.md) | 已完成 | Attention、Q/K/V、缩放点积、Causal Mask 与单 Head |
-| 7 | [Day 007](day-007-2026-08-21.md) | 已完成 | 多 Head 的维度拆分、独立计算、拼接与 `o_proj` |
-| 8 | [Day 008](day-008-2026-08-24.md) | 已完成 | GQA 与共享 K/V Head |
-| 9 | [Day 009](day-009-2026-08-24.md) | 已完成 | RoPE 与 token 位置信息 |
-| 10 | [Day 010](day-010-2026-08-25.md) | 已完成 | 从 `eval_llm.py` 按执行顺序阅读源码 |
-| 11 | [Day 011](day-011-2026-08-27.md) | 已完成 | `generate()` 外层准备与 MiniMind 原生入口定位 |
-| 12 | [Day 012](day-012-2026-08-27.md) | 已完成 | 从运行命令重新建立 MiniMind 原生调用链 |
+| 5 | [Day 005](day-005.md) | 已完成 | 梯度累加、清零、SGD 与最小训练循环 |
+| 6 | [Day 006](day-006.md) | 已完成 | Attention、Q/K/V、缩放点积、Causal Mask 与单 Head |
+| 7 | [Day 007](day-007.md) | 已完成 | 多 Head 的维度拆分、独立计算、拼接与 `o_proj` |
+| 8 | [Day 008](day-008.md) | 已完成 | GQA 与共享 K/V Head |
+| 9 | [Day 009](day-009.md) | 已完成 | RoPE 与 token 位置信息 |
+| 10 | [Day 010](day-010.md) | 已完成 | 从 `eval_llm.py` 按执行顺序阅读源码 |
+| 11 | [Day 011](day-011.md) | 已完成 | `generate()` 外层准备与 MiniMind 原生入口定位 |
+| 12 | [Day 012](day-012.md) | 已完成 | 从运行命令重新建立 MiniMind 原生调用链 |
 | - | [阶段一小结](stage-01-days-001-012.md) | 已完成，不计 Day | 从文本、训练基础、Attention 到 MiniMind 原生推理链 |
-| 13 | [Day 013](day-013-2026-08-31.md) | 已完成 | 闭合推理外层并验证完整数据流 |
-| 14 | [Day 014](day-014-2026-08-31.md) | 已完成 | 从 Full SFT 入口进入训练链路，止于训练循环开始前 |
-| 15 | [Day 015](day-015-2026-09-01.md) | 已完成 | Full SFT 训练循环、最小真实训练、权重保存与重新推理 |
-| 16 | [Day 016](day-016-2026-09-02.md) | 已完成 | 进入 Pretrain 训练主线，比较 Pretrain 与 Full SFT |
-| 17 | [Day 017](day-017-2026-09-02.md) | 已完成 | 从 `train_tokenizer.py` 开始阅读 Tokenizer 训练 |
-| 18 | [Day 018](day-018-2026-09-03.md) | 已完成 | MoE 单层路由、专家合并与 `aux_loss` |
-| 19 | [Day 019](day-019-2026-09-03.md) | 已完成 | MoE 总参数量、激活参数量与计算成本 |
-| 20 | [Day 020](day-020-2026-09-03.md) | 已完成 | LoRA 注入、权重管理与训练更新 |
-| 21 | [Day 021](day-021-2026-09-03.md) | 已完成 | LoRA 权重加载、合并与推理验收 |
-| 22 | [Day 022](day-022-2026-09-03.md) | 已完成 | 蒸馏中的 teacher、student 与损失目标 |
-| 23 | [Day 023](day-023-2026-09-04.md) | 已完成 | 蒸馏真实 forward、反向传播与参数更新 |
-| 24 | [Day 024](day-024-2026-09-04.md) | 已完成 | DPO 的 chosen/rejected 数据与偏好目标 |
-| 25 | [Day 025](day-025-2026-09-04.md) | 已完成 | GRPO rollout、奖励与组内相对优势 |
-| 26 | [Day 026](day-026-2026-09-09.md) | 暂停 | PPO 的直观目标、critic、return、GAE 与 actor 更新 |
+| 13 | [Day 013](day-013.md) | 已完成 | 闭合推理外层并验证完整数据流 |
+| 14 | [Day 014](day-014.md) | 已完成 | 从 Full SFT 入口进入训练链路，止于训练循环开始前 |
+| 15 | [Day 015](day-015.md) | 已完成 | Full SFT 训练循环、最小真实训练、权重保存与重新推理 |
+| 16 | [Day 016](day-016.md) | 已完成 | 进入 Pretrain 训练主线，比较 Pretrain 与 Full SFT |
+| 17 | [Day 017](day-017.md) | 已完成 | 从 `train_tokenizer.py` 开始阅读 Tokenizer 训练 |
+| 18 | [Day 018](day-018.md) | 已完成 | MoE 单层路由、专家合并与 `aux_loss` |
+| 19 | [Day 019](day-019.md) | 已完成 | MoE 总参数量、激活参数量与计算成本 |
+| 20 | [Day 020](day-020.md) | 已完成 | LoRA 注入、权重管理与训练更新 |
+| 21 | [Day 021](day-021.md) | 已完成 | LoRA 权重加载、合并与推理验收 |
+| 22 | [Day 022](day-022.md) | 已完成 | 蒸馏中的 teacher、student 与损失目标 |
+| 23 | [Day 023](day-023.md) | 已完成 | 蒸馏真实 forward、反向传播与参数更新 |
+| 24 | [Day 024](day-024.md) | 已完成 | DPO 的 chosen/rejected 数据与偏好目标 |
+| 25 | [Day 025](day-025.md) | 已完成 | GRPO rollout、奖励与组内相对优势 |
+| 26 | [Day 026](day-026.md) | 暂停 | PPO 的直观目标、critic、return、GAE 与 actor 更新 |
 
 配套实验：
 
@@ -164,7 +164,7 @@ Day 编号按实际发生的学习日递增，不按自然日期递增。只整�
 等后续训练阶段已经完成；当前尚未完成的是 GRPO/CISPO/PPO、Agent RL 以及视觉和
 Omni 阶段。准确的早期掌握边界见
 [阶段一小结](stage-01-days-001-012.md)，Full SFT 的最新边界见
-[Day 015](day-015-2026-09-01.md)。
+[Day 015](day-015.md)。
 
 ## 六、练习代码说明
 
